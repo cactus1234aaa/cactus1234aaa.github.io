@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/x-icon" href="http://media.rhizome.org/blog/9517/Zip-icon.png">
+   <title>my website</title>
+</head>
+<body onload="startTime()">
+<style onload="setTimeout(myAlert, 500)">
+body {
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW1WyGcz8T49vlfA0lU4i7Q5XZnMbuazpVFg&usqp=CAU");
+    background-repeat: no-repeat;
+         background-size: cover;
+      }
+      h1 {
+         color: crimson;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         text-shadow: 0 0 50px #23EBC3, 0 0 50px #23EBC3, 0 0 50px #23EBC3, 0 0 50px #23EBC3;
+         font-size: 50px;
+         animation: mymove 1s infinite;
+      }
+      h2 {
+color: crimson;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 40px;
+      }
+      strong {
+         color: crimson;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         cursor: cell;
+      }
+     a {
+        color: #009c9c;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+      p {
+      color: crimson;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      li {
+         color: crimson;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      h6 {
+         color: crimson;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      hr {
+         height: 1px;
+         background-color: crimson;
+         border: none;
+      }
+     footer {
+        position: fixed;
+        bottom: 0;
+     }
+     @keyframes mymove {
+  50% {text-shadow: 0 0 50px crimson, 0 0 50px crimson, 0 0 50px crimson, 0 0 50px crimson, 0 0 50px crimson, 0 0 50px crimson;}
+}
+  </style>
+<script>
+const alertmessage = Math.floor(Math.random() * 101);
+let welcome;
+
+ if (alertmessage > 99) {
+  welcome = "RARE ONE IN 100 CHANCE BALLS MESSAGE";
+} else {
+  welcome = "Welcome to Cactus' School Tools!";
+}
+
+ function myAlert() {
+alert(welcome)
+ }
+</script>
+      <h1>Cactus' School Tools</h1>
+<h2 id="txt"></h2>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+   function myRedirect() {
+   window.open("https://cactus1234aaa.github.io/info/")
+   }
+</script>
+
+      </script>
+      <h2>tools</h2>
+      <ul>
+         <li>goguardian no close tab: <strong>javascript:(function () {window.onbeforeunload = function() { return 1; };})()</strong></li>
+         <hr>
+         <li>inspect element alternative: <strong>javascript:(function(){var a=document.createElement("script");a.src="https://x-ray-goggles.mouse.org/webxray.js";a.className="webxray";a.setAttribute("data-lang","en-US");a.setAttribute("data-baseuri","https://x-ray-goggles.mouse.org");document.body.appendChild(a);}());</strong></li>
+         <hr>
+         <li>calculator: <strong>javascript:expr=prompt('Formula...(eg:  2*3 + 7/8 )','');if(expr!=null){with(Math){evl=parseFloat(eval(expr))};if(isNaN(evl)){alert('Not a number!')}else{alert(evl)}}else{void(null)}</strong></li>
+         <hr>
+         <li>twirlie.js: <strong>javascript:var s=document.createElement('script');s.type='text/javascript';s.src='https://sheeptester.github.io/javascripts/twirlie.js';document.body.appendChild(s);void(0);</strong></li>
+         <hr>
+         <li><a href="https://vscode.dev">thing i used to code this</a></li>
+      </ul>
+   <h2 onclick = "myRedirect()">click me to get sent to my info page!</h2>
+  <footer>
+    <p>my discord: cactus🥔#7094</p><h6>part of project zip</h6>
+  </footer>
+</body>
+</html>
